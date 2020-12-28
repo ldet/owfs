@@ -67,6 +67,7 @@ static struct filetype DS2413[] = {
 };
 
 DeviceEntryExtended(3A, DS2413, DEV_resume | DEV_ovdr, NO_GENERIC_READ, NO_GENERIC_WRITE);
+DeviceEntryExtendedSecondary(85, DS2413, DEV_resume | DEV_ovdr, NO_GENERIC_READ, NO_GENERIC_WRITE);
 
 #define _1W_PIO_ACCESS_READ 0xF5
 #define _1W_PIO_ACCESS_WRITE 0x5A
